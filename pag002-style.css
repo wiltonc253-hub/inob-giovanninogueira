@@ -297,7 +297,7 @@ body {
 
 /* Seção Principal */
 .hero {
-    background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('../img/quemsoueu.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('../quemsoueu.jpg') center/cover no-repeat;
     color: #fff;
     padding: 60px 20px 32px 20px;
     text-align: center;
