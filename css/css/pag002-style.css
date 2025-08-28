@@ -1,0 +1,502 @@
+/* Botão WhatsApp motivacional */
+.btn-whatsapp-motiva {
+    display: inline-block;
+    background: linear-gradient(90deg,#25d366 60%,#128c7e 100%);
+    color: #fff;
+    font-size: 1.18em;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 32px;
+    margin-top: 12px;
+    text-decoration: none;
+    box-shadow: 0 2px 12px rgba(37,211,102,0.18);
+    transition: all 0.22s cubic-bezier(.4,0,.2,1);
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.btn-whatsapp-motiva:hover {
+    background: linear-gradient(90deg,#128c7e 60%,#25d366 100%);
+    color: #fff700;
+    box-shadow: 0 0 18px 2px #25d36688;
+    transform: scale(1.08);
+}
+.mensagem-motivacional-final {
+    background: linear-gradient(135deg, #181716 80%, #2d2320 100%);
+    padding: 40px 0 36px 0;
+    text-align: center;
+    border-radius: 18px;
+    margin: 48px auto 0 auto;
+    box-shadow: 0 6px 32px 0 rgba(0,0,0,0.18), 0 1.5px 0 #ffd700 inset;
+    animation: fadeInMotivacional 1.2s cubic-bezier(.4,0,.2,1);
+    max-width: 900px;
+}
+.mensagem-motivacional-texto {
+    color: #ffd700;
+    font-size: 1.25em;
+    font-weight: 700;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+    letter-spacing: 0.7px;
+    text-shadow: 0 2px 16px rgba(0,0,0,0.22), 0 1px 0 #fff2;
+    padding: 0 18px;
+    border-left: 4px solid #ffd700;
+    border-right: 4px solid #ffd700;
+    border-radius: 12px;
+    background: rgba(24,23,22,0.85);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    animation: textoMotivacionalFade 1.6s 0.3s cubic-bezier(.4,0,.2,1) both;
+}
+
+@keyframes fadeInMotivacional {
+    0% { opacity: 0; transform: translateY(60px) scale(0.98); }
+    80% { opacity: 1; transform: translateY(-8px) scale(1.01); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes textoMotivacionalFade {
+    0% { opacity: 0; filter: blur(8px); }
+    60% { opacity: 1; filter: blur(0.5px); }
+    100% { opacity: 1; filter: blur(0); }
+}
+.titulo-imagem-giovanni {
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    font-weight: bold;
+    background: rgba(24,23,22,0.85);
+    border-radius: 8px;
+    padding: 10px 8px 8px 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: opacity 0.3s;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+.sobre-giovanni-foto-extra {
+    display: block;
+    margin: 28px auto 0 auto;
+    max-width: 340px;
+    width: 90vw;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+    border: 4px solid #c7a07b;
+}
+.sobre-giovanni {
+    background: #181716;
+    padding: 40px 0 24px 0;
+    margin-bottom: 0;
+}
+.sobre-giovanni-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 980px;
+    margin: 0 auto;
+    gap: 32px;
+}
+.sobre-giovanni-fotos {
+    flex: 1 1 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+.sobre-giovanni-foto-principal {
+    width: 320px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 24px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+    border: 6px solid #c7a07b;
+}
+.sobre-giovanni-textos {
+    flex: 2 1 320px;
+    color: #fff;
+    text-align: left;
+    max-width: 520px;
+}
+.sobre-giovanni-titulo {
+    font-family: 'Bebas Neue', 'Poppins', Arial, sans-serif;
+    font-size: 2em;
+    color: #ffd700;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+.sobre-giovanni-persuasivo {
+    font-size: 1.15em;
+    font-weight: bold;
+    color: #ffe2b0;
+    margin-bottom: 12px;
+}
+.sobre-giovanni-historia {
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.6;
+}
+@media (max-width: 700px) {
+    .sobre-giovanni-container {
+        flex-direction: column;
+        gap: 18px;
+        padding: 0 10px;
+    }
+    .sobre-giovanni-foto-principal {
+        width: 90vw;
+        max-width: 340px;
+        height: 60vw;
+        max-height: 260px;
+        min-width: 180px;
+        min-height: 120px;
+    }
+    .sobre-giovanni-textos {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+.btn-voltar {
+    display: inline-block;
+    margin: 30px auto 0 auto;
+    position: relative;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+.btn-voltar[data-aos] {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.mensagem-giovanni {
+    background: rgba(255,255,255,0.07);
+    border-left: 4px solid #ffd700;
+    border-radius: 8px;
+    margin: 18px auto 32px auto;
+    max-width: 520px;
+    padding: 18px 24px;
+    color: #fff;
+    font-size: 1.1em;
+    font-style: italic;
+    text-align: center;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+@media (max-width: 700px) {
+                .hero {
+                    min-height: 120px;
+                    padding: 24px 8px 16px 8px;
+                    background-position: center top;
+                    background-size: 120% auto;
+                    background-repeat: no-repeat;
+                }
+    .hero h1 {
+        font-size: 1.2em;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .hero p {
+        font-size: 0.95em;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+}
+/* Galeria de Imagens de Exemplo */
+.galeria-exemplo {
+    padding: 32px 0;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    margin: 32px 0;
+    border: 2px solid #c7a07b; /* cobre */
+}
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+.img-exemplo {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(246, 5, 5, 0.1);
+    margin-bottom: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.img-exemplo:hover {
+    transform: scale(1.04);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+}
+.galeria-legenda {
+    text-align: center;
+    margin-top: 16px;
+    color: #2d2320; /* marrom escuro */
+    font-size: 1em;
+    font-weight: bold;
+}
+@media (max-width: 700px) {
+    .galeria-container {
+        gap: 8px;
+    }
+    .img-exemplo {
+        width: 44vw;
+        max-width: 140px;
+        height: 44vw;
+        max-height: 140px;
+    }
+}
+.btn-voltar:active {
+    background-color: #e6c200;
+    color: #ffe2b0;
+    transform: scale(0.97);
+}
+/* Botão VOLTAR */
+.btn-voltar {
+    display: inline-block;
+    background: linear-gradient(90deg,#ffd700,#c7a07b); /* dourado para cobre */
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 32px;
+    border: 2px solid #c7a07b;
+    border-radius: 25px;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    transition: background 0.2s, color 0.2s, transform 0.2s;
+    font-size: 1.1em;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+}
+.btn-voltar:hover, .btn-voltar:focus {
+    background: linear-gradient(90deg,#c7a07b,#ffd700);
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+    text-decoration: none;
+    outline: none;
+}
+/* Estilos CSS para o projeto */
+
+/* Reset básico e fontes */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #181716;
+    color: #ffe2b0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Seção Principal */
+.hero {
+    background: linear-gradient(rgba(26,26,26,0.7), rgba(26,26,26,0.7)), url('../img/quemsoueu.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 60px 20px 32px 20px;
+    text-align: center;
+    position: relative;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    transition: background 0.4s;
+}
+.hero::before {
+    /* Removido o pseudo-elemento, pois o blur já é feito no background da imagem */
+}
+
+.hero-img-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.85;
+    z-index: 1;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.25);
+    border-radius: 0;
+}
+.hero-text {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+.hero-text h1, .hero-text p {
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    margin: 0;
+}
+.hero-text h1 {
+    font-size: 2em;
+    font-weight: 700;
+    margin-bottom: 0.2em;
+}
+.hero-text p {
+    font-size: 1em;
+    margin-top: 0.2em;
+}
+
+
+.hero h1, .hero p {
+    opacity: 0.7;
+    transition: opacity 0.4s;
+    position: relative;
+    z-index: 1;
+    color: #fff;
+}
+.hero:hover h1, .hero:hover p,
+.hero.scrolled h1, .hero.scrolled p {
+    opacity: 1;
+}
+.hero h1 {
+    font-size: 2em;
+    margin-bottom: 0.2em;
+    margin-left: 32px;
+    margin-right: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.45);
+    color: #fff;
+    background: none;
+}
+.hero p {
+    font-size: 1em;
+    margin-top: 0;
+    margin-left: 32px;
+    margin-right: 32px;
+    color: #fff;
+}
+
+/* Seção Sobre */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+}
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.about-content img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #c7a07b; /* cobre */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+@media (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+/* Seção de Depoimentos */
+.testimonials {
+    background: linear-gradient(120deg,#444,#e0e0e0 80%);
+    padding: 40px 20px;
+}
+.testimonials h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+.testimonial-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.testimonial-card {
+    background-color: #fff;
+    padding: 24px 20px;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: box-shadow 0.2s, transform 0.2s;
+    border: 2px solid #c7a07b; /* cobre */
+    margin-bottom: 32px;
+}
+.testimonial-card:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.16);
+    transform: translateY(-4px) scale(1.02);
+}
+
+.testimonial-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.testimonial-header img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+}
+.testimonial-card p {
+    font-style: italic;
+    position: relative;
+    padding-left: 20px;
+}
+.testimonial-card p::before {
+    content: '“';
+    font-size: 3em;
+    color: #b3b3b3;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+}
+.testimonial-card .author {
+    font-weight: bold;
+    display: block;
+}
+.testimonial-card .location {
+    font-size: 0.9em;
+    color: #c7a07b; /* cobre */
+}
+@media (min-width: 768px) {
+    .testimonial-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .testimonial-card {
+        flex-basis: 48%; /* 2 colunas em telas maiores */
+    }
+}
+   
+
+/* Rodapé */
+footer {
+    background: #2d2320; /* marrom escuro */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+

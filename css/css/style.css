@@ -1,0 +1,158 @@
+/* Importação de fonte do Google Fonts */
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do Logo e Título */
+.logo-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.logo-header p {
+    font-size: 1em;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+/* Estilo da Seção de Links */
+.links-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link-item {
+
+    text-decoration: none;
+    background-color: #222;
+    border: 2px solid white;
+    border-radius: 12px;
+    transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+}
+
+.link-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.link-item:active {
+    background-color: #444;
+    color: #ffd700;
+    transform: scale(0.97);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s;
+}
+
+/* Estilo da camada interna com a animação de flutuar */
+.link-item-inner {
+    width: 100%;
+    animation: floating 3s ease-in-out infinite;
+    min-height: 100px;
+}
+
+/* --- ESTILO NOVO: Garante que a imagem preencha o botão por completo --- */
+.link-item-inner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* EFEITO DE HOVER PARA QUANDO O MOUSE PASSAR POR CIMA */
+.link-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+/* EFEITO DE CLICK / TOQUE */
+.link-item:active {
+    transform: scale(0.98);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    transition: transform 0.1s;
+}
+
+/* Estilo do Rodapé */
+.social-footer {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.social-footer p {
+    margin-bottom: 10px;
+    color: #aaa;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover {
+    opacity: 1;
+}
+
+/* Responsividade para telas menores (celulares) */
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .logo {
+        width: 120px;
+    }
+    
+    h1 {
+        font-size: 1.8em;
+    }
+}
+
+/* ANIMAÇÃO FLUTUANTE */
+@keyframes floating {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+
