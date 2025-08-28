@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Giovanni Nogueira | Professor de Barbearia</title>
+    
+    <link rel="stylesheet" href="css/css/pag002-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+
+    <section class="hero">
+        <div class="container hero-img-container">
+            <img src="img/quemsoueu.jpg" alt="Foto de Giovanni Nogueira" class="hero-img">
+            <div class="hero-text">
+                <h1>Professor Giovanni Nogueira</h1>
+                <p>Especialista em Técnicas de Barbearia</p>
+            </div>
+            <!-- Botão removido daqui para ser colocado no final da página -->
+        </div>
+    </section>
+
+    <script>
+    // Animação JS: botão pulsa ao passar o mouse
+    document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('btn-whatsapp-giovanni');
+        if(btn) {
+            btn.addEventListener('mouseenter', function() {
+                btn.style.transform = 'scale(1.08)';
+                btn.style.boxShadow = '0 0 18px 2px #25d36688';
+            });
+            btn.addEventListener('mouseleave', function() {
+                btn.style.transform = 'scale(1)';
+                btn.style.boxShadow = '';
+            });
+        }
+    });
+    </script>
+
+
+    <!-- Galeria de Imagens de Exemplo -->
+    <section class="galeria-exemplo">
+        <div class="container galeria-container">
+            <img src="img/quemsoueu.jpg" alt="Exemplo 1" class="img-exemplo">
+            <img src="img/pretoebranco.jpg" alt="Exemplo 2" class="img-exemplo">
+            <img src="img/inob.jpg" alt="Exemplo 3" class="img-exemplo">
+            <img src="img/logo.jpg" alt="Exemplo 4" class="img-exemplo">
+        </div>
+        <div class="galeria-legenda">Exemplos de trabalhos, eventos e identidade INOBI</div>
+    </section>
+
+    
+
+    <section class="about">
+        <div class="container about-content">
+            <img src="img/quemsoueu.jpg" alt="Foto de Giovanni Nogueira" style="border: 4px solid #fff; border-radius: 50%; box-shadow: 0 2px 12px rgba(0,0,0,0.12);" data-aos="fade-up">
+            <div>
+                <h2>Quem é Giovanni Nogueira?</h2>
+                <p>
+                    Com mais de <span id="contador-anos">0</span> anos de experiência, Giovanni Nogueira é um verdadeiro apaixonado pela arte da barbearia. Sua trajetória começou de forma humilde e hoje ele é um renomado professor, compartilhando todo seu conhecimento e técnicas modernas. Seu objetivo é formar profissionais de excelência e elevar o nível da barbearia na sua região.
+                </p>
+                <div style="margin: 24px 0 8px 0;">
+                    <span style="font-size:2em;font-weight:bold;color:#ffd700;"><span id="contador-alunos">0</span></span>
+                    <span style="font-size:1.1em;font-weight:600;color:#fff;">ALUNOS FORMADOS, O PRÓXIMO É VOCÊ <span style="color:#ffff00;">👆</span></span>
+                    <div id="barra-progresso-alunos" style="width: 100%; max-width: 320px; height: 16px; background: #eee; border-radius: 8px; margin: 12px auto 0 auto; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                        <div id="barra-preenchida-alunos" style="height: 100%; width: 0; background: linear-gradient(90deg,#ffd700,#ffea70); border-radius: 8px; transition: width 0.4s;"></div>
+                    </div>
+                </div>
+                <div style="font-size:1.1em;color:#fff;">INOBI - Instituto Nogueira O Barbeiro 🎓<br>Transformando vidas através da barbearia!💈</div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="testimonials">
+    <section class="sobre-giovanni">
+        <div class="sobre-giovanni-container">
+            <div class="sobre-giovanni-fotos">
+                <div class="sobre-giovanni-foto-wrapper" style="position:relative; display:inline-block;">
+                    <img src="img/palestras.webp" alt="Giovanni Nogueira" class="sobre-giovanni-foto-principal" data-aos="zoom-in">
+                    <div id="titulo-imagem-giovanni" class="titulo-imagem-giovanni" style="display:none; position:absolute; left:50%; bottom:18px; transform:translateX(-50%); width:90%;"></div>
+                </div>
+                <!-- Adicione mais fotos aqui se quiser -->
+            </div>
+            <div class="sobre-giovanni-textos">
+                <h2 class="sobre-giovanni-titulo">Conheça a história do Giovanni</h2>
+                <p class="sobre-giovanni-persuasivo">
+                    A barbearia transformou a minha vida e pode transformar a sua também! Já ajudei centenas de pessoas a mudarem de vida, conquistando independência financeira e respeito na profissão. Quero te convidar para fazer parte dessa história de sucesso!
+                </p>
+                <p class="sobre-giovanni-historia">
+                    Comecei minha trajetória de forma humilde, enfrentando muitos desafios e superando obstáculos com dedicação. Sou apaixonado pela arte de cortar cabelo, busquei me especializar, estudei com os melhores e hoje sou referência no ensino de barbearia. Minha missão é inspirar e capacitar novos barbeiros, mostrando que é possível crescer e prosperar com honestidade, técnica e paixão pelo que fazemos.
+                </p>
+                <img src="img/certificado.webp" alt="Giovanni em palestra" class="sobre-giovanni-foto-extra">
+                </p>
+            </div>
+        </div>
+    </section>
+        <div class="container">
+            <h2 style="color:#fff; font-family: 'Bebas Neue', 'Poppins', Arial, sans-serif; letter-spacing:1px; font-size:2.2em; font-weight:400;">O QUE OS ALUNOS ESTÃO FALANDO</h2>
+            <div class="mensagem-giovanni">
+                <p>“Acredite no seu potencial! A barbearia pode transformar vidas, assim como transformou a minha. Seja bem-vindo ao nosso time!”<br><strong>— Giovanni Nogueira</strong></p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                <div class="testimonial-card" data-aos="fade-right">
+                <div class="testimonial-card" data-aos="fade-up-right">
+                    <div class="testimonial-header">
+                                    <img src="img/aluno.jpg" alt="Foto de Carlos Wilton">
+                        <div>
+                            <span class="author" style="color:#2d2320;">Carlos Wilton</span>
+                            <span class="location" style="color:#000;">Belford Roxo - RJ</span>
+                        </div>
+                    </div>
+                    <p style="color:#000;">
+                        
+                        "Top demais, professor o senhor sempre passa a visão certa sobre a vida e o corte de cabelo, um conteúdo super fácil de aprender e colocar em prática, e que você sempre ajude as pessoas com seu conhecimento professor tmj."
+                    </p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                                    <img src="img/OIP (2).jpg" alt="Foto de Willian dos Santos">
+                        <div>
+                            <span class="author" style="color:#2d2320;">Willian dos Santos</span>
+                            <span class="location" style="color:#000;">Rio de Janeiro - RJ</span>
+                        </div>
+                    </div>
+                    <p style="color:#000;">
+                        "Mano, teu curso é top demais! Tá valendo cada centavo, sério. As aulas são diretas, fáceis de entender, e as técnicas já tão fazendo a diferença nos cortes que faço aqui. Valeu demais por compartilhar tudo isso!"
+                    </p>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                                    <img src="img/OIP (3).jpg" alt="Foto de Lucas Ferreira">
+                        <div>
+                            <span class="author" style="color:#2d2320;">Lucas Ferreira</span>
+                            <span class="location" style="color:#000;">São José do Rio Preto - SP</span>
+                        </div>
+                    </div>
+                    <p style="color:#000;">
+                        "Excelente conteúdo e didática! O professor Giovanni explica cada detalhe com clareza, o que faz toda a diferença para quem quer realmente dominar a profissão. Recomendo muito!"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- Mensagem motivacional movida para após os depoimentos -->
+
+    <section class="mensagem-motivacional-final" data-aos="fade-up">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 28px;">
+                <a id="btn-whatsapp-giovanni" href="https://wa.me/5521986560887?text=Olá,+Giovanni+Nogueira+Gostaria+de+fazer+parte+do+seu+curso.+Sei+que+ira+me+ajudar+muito+na+minha+carreira+como+barbeiro+profissional+Gostaria+de+saber+mais?" target="_blank" class="btn-whatsapp-motiva" data-aos="zoom-in">
+                    🤝 Quero ser Aluno do Giovanni? Clique aqui! 💬
+                </a>
+            </div>
+            <p class="mensagem-motivacional-texto">
+                Você também é capaz de aprender, basta se dedicar e acreditar no seu potencial! Não importa de onde você veio ou quais desafios já enfrentou, sempre é possível dar um novo passo e transformar sua vida. Eu estou aqui para te ajudar, assim como faço com todos os meus alunos. Juntos, somos uma família que cresce, compartilha e vence! Venha fazer parte dessa história e descubra até onde você pode chegar!
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <footer>
+        <div class="container">
+            <p>
+                Todos os direitos reservados a &copy;Giovanni Nogueira.
+                <a href="index.html" style="color: white;">Voltar para a página inicial</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+    <div style="text-align: center; margin-top: 30px;">
+        <a href="index.html" class="btn-voltar" data-aos="fade-right">VOLTAR</a>
+    <script>
+    // Animação JS: botão pulsa ao passar o mouse (mantido no final para funcionar no novo local)
+    document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('btn-whatsapp-giovanni');
+        if(btn) {
+            btn.addEventListener('mouseenter', function() {
+                btn.style.transform = 'scale(1.08)';
+                btn.style.boxShadow = '0 0 18px 2px #25d36688';
+            });
+            btn.addEventListener('mouseleave', function() {
+                btn.style.transform = 'scale(1)';
+                btn.style.boxShadow = '';
+            });
+        }
+    });
+    </script>
+                                
+
+                    
+                </script>
+</body>
+</div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="public_html/js/contador.js"></script>
+</body>
+</html>

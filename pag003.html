@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessoria Exclusiva | Giovanni Nogueira</title>
+    <link rel="stylesheet" href="css/css/pag003-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header-assessoria" data-aos="fade-down">
+        <h1>Assessoria Exclusiva Giovanni Nogueira</h1>
+        <p>Transforme sua carreira na barbearia com acompanhamento personalizado, dicas práticas e estratégias de sucesso!</p>
+    </header>
+
+    <section class="vantagens-section">
+        <h2 class="vantagens-title" data-aos="fade-up">Por que escolher a assessoria do Giovanni?</h2>
+        <div class="vantagens-list">
+            <div class="vantagem-card" data-aos="fade-up" data-aos-delay="100">
+                <span>📈 Acompanhamento individual para acelerar seus resultados</span>
+            </div>
+            <div class="vantagem-card" data-aos="fade-up" data-aos-delay="200">
+                <span>💡 Estratégias exclusivas para conquistar e fidelizar clientes</span>
+            </div>
+            <div class="vantagem-card" data-aos="fade-up" data-aos-delay="300">
+                <span>🎯 Plano de ação personalizado para o seu perfil e objetivos</span>
+            </div>
+            <div class="vantagem-card" data-aos="fade-up" data-aos-delay="400">
+                <span>🤝 Suporte direto com Giovanni via WhatsApp</span>
+            </div>
+            <div class="vantagem-card" data-aos="fade-up" data-aos-delay="500">
+                <span>🚀 Dicas de marketing, gestão e técnicas modernas de barbearia</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="contato-section" data-aos="zoom-in">
+        <h2>Pronto para transformar sua carreira?</h2>
+        <p>Garanta sua vaga na assessoria exclusiva e tenha acesso direto ao Giovanni para tirar dúvidas, receber feedbacks e evoluir de verdade!</p>
+        <a id="btn-whatsapp-assessoria" href="https://wa.me/5521986560887?text=Olá,+Giovanni+Nogueira+Gostaria+de+fazer+parte+da+sua+assessoria.+Sei+que+ira+me+ajudar+muito+na+minha+carreira+como+barbeiro+profissional+Gostaria+de+saber+mais?" target="_blank" class="btn-whatsapp-assessoria">
+            💬 Fale com Giovanni no WhatsApp
+        </a>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script>
+    // Animação JS: botão pulsa ao passar o mouse
+    document.addEventListener('DOMContentLoaded', function() {
+        var btn = document.getElementById('btn-whatsapp-assessoria');
+        if(btn) {
+            btn.addEventListener('mouseenter', function() {
+                btn.style.transform = 'scale(1.08)';
+                btn.style.boxShadow = '0 0 18px 2px #25d36688';
+            });
+            btn.addEventListener('mouseleave', function() {
+                btn.style.transform = 'scale(1)';
+                btn.style.boxShadow = '';
+            });
+        }
+    });
+    </script>
+</body>
+</html>
