@@ -1,0 +1,162 @@
+/* Importação de fonte para um visual mais clean */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --black: #121212;
+    --dark-gray: #1e1e1e;
+    --gold: #FFD700;
+    --white: #f0f0f0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden; /* Evita a barra de rolagem horizontal em animações */
+}
+
+.header, .main-content, .footer {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.header {
+    margin-top: 50px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+    color: var(--gold);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.header p {
+    font-size: 1.2em;
+    color: #ccc;
+}
+
+.benefits-section {
+    background-color: var(--dark-gray);
+    border-radius: 10px;
+    padding: 40px 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.benefits-section h2 {
+    color: var(--gold);
+    margin-bottom: 30px;
+}
+
+.benefit-card {
+    background-color: var(--black);
+    padding: 25px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    border: 1px solid var(--dark-gray);
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-card h3 {
+    color: var(--gold);
+    margin-top: 0;
+}
+
+.call-to-action {
+    margin-top: 40px;
+}
+
+.call-to-action h2 {
+    color: var(--gold);
+}
+
+#whatsapp-button {
+    background-color: #25d366; /* Verde do WhatsApp */
+    color: var(--white);
+    padding: 15px 35px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+#whatsapp-button:hover {
+    background-color: #128c7e;
+    transform: scale(1.05);
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(50px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.slide-up {
+    animation: slideUp 1s ease-out forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.5s; }
+.fade-in:nth-child(2) { animation-delay: 1s; }
+.benefit-card:nth-child(1) { animation-delay: 1.5s; }
+.benefit-card:nth-child(2) { animation-delay: 2s; }
+.benefit-card:nth-child(3) { animation-delay: 2.5s; }
+.call-to-action h2 { animation-delay: 3s; }
+#whatsapp-button { animation-delay: 3.5s; }
+
+/* Efeito de brilho no botão */
+.shine-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine-effect::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: skewX(-45deg);
+    transition: all 0.7s;
+}
+
+.shine-effect:hover::before {
+    left: 125%;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2em;
+    }
+
+    .benefit-card {
+        padding: 20px;
+    }
+}

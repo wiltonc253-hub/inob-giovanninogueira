@@ -1,0 +1,152 @@
+/* Estilo principal para a página de assessoria Giovanni Nogueira */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    background: linear-gradient(135deg, #181716 70%, #2d2320 100%);
+    color: #fff;
+}
+
+.header-assessoria {
+    background: linear-gradient(90deg, #ffd700 60%, #c49c48 100%);
+    color: #181716;
+    padding: 32px 0 24px 0;
+    text-align: center;
+    border-radius: 0 0 32px 32px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    position: relative;
+}
+.header-assessoria h1 {
+    font-family: 'Bebas Neue', 'Poppins', Arial, sans-serif;
+    font-size: 2.8em;
+    margin: 0 0 12px 0;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 0 2px 12px #fff8;
+}
+.header-assessoria p {
+    font-size: 1.2em;
+    font-weight: 500;
+    margin: 0 0 8px 0;
+}
+
+.vantagens-section {
+    padding: 32px 0 24px 0;
+    text-align: center;
+}
+.vantagens-title {
+    font-size: 2em;
+    color: #ffd700;
+    margin-bottom: 18px;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+}
+.vantagens-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+.vantagem-card {
+    background: rgba(24,23,22,0.92);
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.14);
+    padding: 24px 18px;
+    max-width: 320px;
+    min-width: 220px;
+    color: #ffd700;
+    font-size: 1.15em;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    border: 2px solid #c49c48;
+    animation: fadeUpCard 1.2s cubic-bezier(.4,0,.2,1);
+}
+.vantagem-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 32px 0 #ffd70044;
+    background: #2d2320;
+    color: #fff;
+}
+@keyframes fadeUpCard {
+    0% { opacity: 0; transform: translateY(40px); }
+    80% { opacity: 1; transform: translateY(-8px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+.contato-section {
+    background: linear-gradient(90deg, #ffd700 60%, #c49c48 100%);
+    color: #181716;
+    padding: 32px 0 24px 0;
+    text-align: center;
+    border-radius: 32px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.10);
+    margin: 32px auto 0 auto;
+    max-width: 500px;
+}
+.contato-section h2 {
+    font-size: 2em;
+    margin-bottom: 12px;
+    font-family: 'Bebas Neue', Arial, sans-serif;
+    color: #2d2320;
+}
+.contato-section p {
+    font-size: 1.15em;
+    margin-bottom: 18px;
+    color: #181716;
+}
+.btn-whatsapp-assessoria {
+    display: inline-block;
+    background: linear-gradient(90deg,#25d366 60%,#128c7e 100%);
+    color: #fff;
+    font-size: 1.18em;
+    font-weight: 700;
+    padding: 14px 32px;
+    border-radius: 32px;
+    margin-top: 12px;
+    text-decoration: none;
+    box-shadow: 0 2px 12px rgba(37,211,102,0.18);
+    transition: all 0.22s cubic-bezier(.4,0,.2,1);
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+.btn-whatsapp-assessoria:hover {
+    background: linear-gradient(90deg,#128c7e 60%,#25d366 100%);
+    color: #fff700;
+    box-shadow: 0 0 18px 2px #25d36688;
+    transform: scale(1.08);
+}
+
+@media (max-width: 900px) {
+    .vantagens-list {
+        flex-direction: column;
+        gap: 18px;
+    }
+    .vantagem-card {
+        max-width: 98vw;
+        min-width: 0;
+    }
+    .contato-section {
+        max-width: 98vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-assessoria h1 {
+        font-size: 2em;
+    }
+    .vantagens-title {
+        font-size: 1.3em;
+    }
+    .contato-section h2 {
+        font-size: 1.3em;
+    }
+    .vantagem-card {
+        font-size: 1em;
+        padding: 18px 8px;
+    }
+}
